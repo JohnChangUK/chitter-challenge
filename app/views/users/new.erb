@@ -1,0 +1,21 @@
+<h1>Welcome, Please Sign Up!</h1>
+<% if current_user %>
+You have signed in already!
+
+<% else %>
+<form action="/users" method="POST">
+  <label for ="name">What is your name? </label>
+  <input type="text" name="name" required />
+  <br />
+  <label for "email">What is your email?</label>
+  <input type="email" name="email" required />
+  <br  />
+  <label for ="password"> Choose a password</label>
+  <input type="password" name="password" required />
+  <br  />
+  <label for="password_confirmation">Confirm your password</label>
+  <input type="password" name="password_confirmation" required />
+  <br  />
+  <input class="button" type="submit" value="Sign up" />
+</form>
+<% end %> 
