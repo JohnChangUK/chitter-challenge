@@ -1,3 +1,5 @@
+require 'web_helper'
+
 feature 'sign in' do
 
   let(:user) do
@@ -14,5 +16,5 @@ feature 'sign in' do
       visit '/users/new'
       expect(page).to have_content 'You are signed in, cannot sign in again'
       expect(page).not_to have_content 'What is your name?'
-    end 
+    end
 end

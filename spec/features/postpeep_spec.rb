@@ -1,3 +1,5 @@
+require 'web_helper'
+
 feature 'Posting Peep' do
 
   scenario 'a user can post a new peep' do
